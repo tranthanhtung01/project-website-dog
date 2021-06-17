@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sản Phẩm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/original.jpg">
+	<link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+	<link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+	<!-- TOP NAVBAR -->
+	<div>
+		<div class="topBar col-md-12">
+			<div id="mySidenav" class="sidenav hidden-lg hidden-md">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >x</a>
+				<a class="active" href="index.html">Trang Chủ</a>
+				<hr>
+				<a href="san-pham.html">Sản Phẩm</a>
+				<hr>
+				<a href="gioi-thieu.html">Giới Thiệu</a>
+				<hr>
+				<a href="lien-he.html">Liên Hệ</a>
+				<hr>
+				<a href="huong-dan-mua-hang.html">Hướng Dẫn Sử Dụng</a>
+				<hr>
+				<a href="quan-ly-don-hang.html">Đơn Hàng</a>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-6 col-xl-6  pull-left">
+					<ul class="list-inline pull-left">
+						<li><a href="#"><i style="margin-top: 20px;" class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+					</ul>
+				</div> 		
+			</div>
+		</div>
+	</div>
+	<!-- END TOP NAVBAR -->
+
+	<!-- HEADER TOP -->
+	<div class="col-lg-12 col-md-12 col-sm-12 header-top">
+		<div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo">
+                    <a href="#"><img class="img-fluid" src="img/ngon.jpg" alt="img-responsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs logo1">
+                    <a href="#"><img class="img-fluid" src="img/897.jpg" alt="img-responsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs header__hotline">
+                    <form action="" style="padding-top: 25px">
+                        <div class="header__hotline--bg">
+                            <p class="header__hotline--phone"><span><strong>Hotline: </strong><a
+                                        href="tel:0989.777.999">0989.777.999</a></span></p>
+                            <p class="header__hotline--email"><span><strong>Email: </strong><a
+                                        href="mailto:support@myphamgoda.com">support@Thedoghouse.com</a></span></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs search">
+                    <form action="" style="padding-top: 25px;position: relative;top:75px; left: 270px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control search" placeholder="Bạn muốn tìm gì?..."
+                                name="search">
+                            <div class="input-group-btn">
+                                <button class="btn bt-search" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>	
+	</div>		
+	<!-- END HEADER TOP -->
+
+	<!-- NAVBAR DESTOP -->
+	 <nav class="col-xs-12 navbar navbar-default bg-color" id="menu" style="position: sticky; margin: 0px; z-index: 99; top: 0px;">
+            <div class="container-fluid">
+                <span class="hidden-lg hidden-md header__btn">
+                    <div id="btn-cate main"><i class=" col-xs-1 " aria-hidden="true"></i></div>
+                    <span style="cursor:pointer" id="menu-hide"  onclick="openNav()">
+                        <i style="color: #ec0000; font-size: 16px;" class="fa fa-bars"></i>
+                    </span>
+                </span>
+                <form action="" style="padding-top: 25px" class="hidden-lg hidden-md">
+                    <div class="input-group">
+                        <input type="text" id="result" class="form-control search" placeholder="Bạn muốn tìm gì?..." name="search" >
+                        <div class="input-group-btn">
+                            <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search" style="color:grey"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="san-pham">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                    <li class="acs-list"><a href="#" id="btn-category"><i class="fa fa-navicon"></i> Danh Mục Sản Phẩm</a></li>
+                    <li style="background-color:#555"><a href="index.html"><i class="fa fa-home" style="font-size: 16px"></i></a></li>
+                    <li><a href="san-pham.html">Sản Phẩm </a></li>                    
+                    <li class="active"><a href="gioi-thieu.html">Giới Thiệu </a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                    <li><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="quan-ly-don-hang.html">Quản Lý Đơn Hàng</a></li>
+                </ul>
+                <span class="hidden-lg hidden-md menu__cart">
+                    <a href="#" id="sub-btn-cart-detail"><i style="font-size: 16px;margin-left: 15px;" class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                </span>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs bg-color">
+                    <li><a href="#" id="btn-cart-detail" title="Giỏ Hàng"><i class="fa fa-shopping-basket"></i></a></li>
+                </ul>
+        </nav>
+		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default acs-list" id="Categories" 
+        style="position: sticky; z-index: 99;top: 50px;">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-pug.html">Chó Pug </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-corgi.html"> Chó Corgi </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-husky.html">Chó Husky </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-shiba.html">Chó Shiba </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-becgie.html">Chó Becgie </a>
+                    </li>
+                     <li class="dropdown">
+                        <a href="chi-tiet-akita.html">Chó Akita </a>
+                    </li>
+                     <li class="dropdown">
+                        <a href="chi-tiet-puppy.html">Chó Puppy </a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+        <div style="clear: both"></div> 
+	<!-- END NAVBAR DESTOP -->
+        <section class="col-md-12 gioi-thieu" style="background-color: white">
+            <div class="container">
+                <ul class="breadcrumb" style="margin-top: 20px;margin-left: -30px;">  
+                    <li class="breadcrumb-item">
+                        <a href="index.html" itemprop="url" title="trang chủ"><span itemprop="title">Trang Chủ</span></a>
+                    </li>
+                            <li class="breadcrumb-item">
+                            <a href="gioi-thieu.html" itemprop="url" title="danh mục"><span itemprop="title">Giới Thiệu</span></a>
+                        </li>
+                    </ul>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 introduce">
+                    <div class="text-gt">
+                        <h2 style="text-align: center;color:#036593; font-family:'OpenSansBold' ;margin-top:-10px;">THEDOGHOUSE ĐỒNG HÀNH CÙNG SEN , CHĂM LO CHO BOSS</h2>
+                    </div>
+                    <table>
+                        <div style="text-align: justify;font-size: 17px; border: 3px solid #555;padding-left: 10px; margin-bottom: 20px;">
+                            <p><strong style="color:#036593;">I. QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</strong></p>
+                            <p>Được thành lập từ 31/1/2008, sự ra đời của <strong>Thedoghouse.com</strong> bắt nguồn từ niềm vui nuôi thú cưng và tình yêu mến đặc biệt dành cho thú nuôi trong nhà.</p>
+                            <p><strong>Thedoghouse.com</strong> khai trương 1A Nam Kỳ Khởi Nghĩa - Quận 3 - Tp.HCM chính thức tham gia vào lĩnh vực kinh doanh bán thú cưng để tạo ra một phong cách trên toàn nước, thông qua cung cấp các loại thú cưng tới người tiêu dùng.</p>
+                            <p><strong>• TẦM NHÌN:</strong></p>
+                            <p><strong>Công ty số 1 tại Việt Nam</strong> trong lĩnh vực phân phối các loại thú cưng quý hiếm trên thế giới</p>
+                            <p><strong>• SỨ MỆNH:</strong></p>
+                            <p>Với kim chỉ nam là “Không ngừng phát triển vì khách hàng” và làm hài lòng khách hàng bằng cách tạo ra những giá trị gia tăng như cung cấp các loại thú cưng với những giống tốt nhất.</p>
+                            <p><strong>• MỤC TIÊU CHIẾN LƯỢC:</strong></p>
+                            <p>1. Tối đa hoá giá trị đầu tư của các cổ đông; giữ vững tốc độ tăng trưởng lợi nhuận và tình hình tài chính lành mạnh;</p>
+                            <p>2. Không ngừng nâng cao chất lượng phục vụ , chất lượng sản phẩm làm hài lòng khách hàng nên đã có được nhiều sự ủng hộ nhiệt tình và sự gắn bó lâu dài của khách hàng. Cũng từ đó <strong>Thedoghouse.com</strong> ngày một lớn mạnh hơn, kinh doanh thêm nhiều mặt hàng phong phú hơn.</p>
+                            <p>3. Duy trì sự hài lòng, trung thành và gắn bó của khách hàng với <strong>Thedoghouse.com</strong> , xây dựng <strong>Thedoghouse.com</strong> thành một trong những công ty hàng đầu Việt Nam có chất lượng dịch vụ tốt nhất do khách hàng lựa chọn.</p>
+                            <p>4. Phát triển <strong>Thedoghouse.com</strong> thành một trong những nhà bán thú cưng hàng đầu Việt Nam về: quản lý tốt nhất, môi trường làm việc tốt nhất, văn hoá doanh nghiệp chú trọng khách hàng, thúc đẩy hợp tác và sáng tạo, linh hoạt nhất khi môi trường kinh doanh thay đổi.</p>
+                            <p><strong style="color:#036593;">II. THẾ MẠNH VÀ ĐỊNH HƯỚNG CỦA CÔNG TY</strong></p>
+                            <p>- Với kim chỉ nam là “Không ngừng phát triển vì khách hàng”, <strong>Thedoghouse.com</strong> đã quy tụ được Ban Lãnh đạo có bề dày kinh nghiệm trong các lĩnh vực về thú cưng không chỉ mạnh về kinh doanh mà còn mạnh về công nghệ có nhiều tiềm năng phát triển, kết hợp với đội ngũ nhân viên trẻ, năng động và chuyên nghiệp tạo lên thế mạnh nòng cốt của công ty để thực hiện tốt các mục tiêu đề ra.</p>
+                            <p>- Hơn nữa, trên cơ sở nguồn lực của công ty và nhu cầu của xã hội, <strong>Thedoghouse.com</strong> lựa chọn phát triển kinh doanh các sản phẩm phẩm linh kiện cho thú cưng đáp ứng nhu cầu thiết yếu của người dân với các sản phẩm đa dạng phong phú mang lại giá trị gia tăng cho người tiêu dùng thông qua các dịch vụ sau bán hàng.</p>
+                             <p>- Qua quá trình phát triển, bên cạnh việc thiết lập được một hệ thống đối tác trong nước và ngoài nước đến từ các doanh nghiệp lớn của Korea, Singapore, Trung Quốc, Nhật Bản, có thế mạnh trong các lĩnh vực thú cưng.</p>
+                             <p><strong style="color:#036593;">III. ĐỘI NGŨ NHÂN VIÊN</strong></p>
+                             <p>- Đội ngũ nhân viên chuyên nghiệp đưa đón tận nơi các thú cưng của bạn có nhu cầu tắm gội , vệ sinh tai , cắt tỉa , làm đẹp lông , móng...</p>
+                            <p><strong style="color:#036593;">IV. CAM KẾT</strong></p>
+                            <p><strong>Thedoghouse.com</strong> nỗ lực hướng tới mục tiêu phát triển bền vững và trở thành thương hiệu hàng đầu về cung cấp thú cưng tại Việt Nam mang tầm cỡ quốc tế. Dựa vào nội lực của chính mình và mở rộng hợp tác với các đối tác trong và ngoài nước chúng tôi cam kết.</p>
+    
+                           <p><strong>Cam kết với đối tác:</strong></p>
+    
+                        <p>- Trở thành đối tác chiến lược trong và ngoài nước trên cơ sở " Hợp tác, phát triển bền vững " hợp tác toàn diện lâu dài nhằm kịp thời đưa những loại thú cưng mới nhất và dịch vụ theo các yêu cầu đặc thù của khách hàng.</p>
+    
+                        <p><strong>Cam kết với khách hàng:</strong></p>
+    
+                        <p>- Luôn luôn làm khách hàng hài lòng về các sản phẩm và dịch vụ do <strong>Thedoghouse.com</strong> cung cấp. Sự thành công hài lòng của khách hàng là thước đo uy tín hiệu quả của doanh nghiệp.</p>
+    
+                        <p>- Giá cả hàng hóa luôn hợp lý và được cập nhật chính xác, kịp thời nhất để phục vụ khách hàng tốt nhất.</p>
+    
+                        <p>- Luôn lắng nghe, phân tích và học hỏi từ thị trường trong và ngoài nước. Không bao giờ tự mãn với thành công đã có.</p>
+    
+                        <p>- Luôn nhìn lại mình để phát triển (đạo đức và kiến thức chuyên môn). Mỗi nhân viên là một thương hiệu cá nhân. Mỗi nhân viên là một đại sứ thiện chí của <strong>Thedoghouse.com</strong> đối với thế giới bên ngoài.</p>
+    
+                        <p><strong style="color:#036593;">&nbsp;V. NHỮNG MỤC TIÊU TƯƠNG LAI</strong></p>
+    
+                        <p>- Không ngừng vươn xa, <strong>Thedoghouse</strong> sẽ mở rộng Hệ thống thế giới thú cưng tới các Tỉnh thành trong cả nước với tiêu chí phát triển, hiệu quả, bền vững. Sự gia tăng mạnh mẽ cả về nguồn vốn, mô hình và mạng lưới hoạt động cũng như chất lượng nguồn nhân lực không chỉ thể hiện những khởi sắc mà còn là dấu ấn quan trọng trong hoạt động kinh doanh của <strong>Thedoghouse.com</strong>.</p>
+                        </div>
+                    </table>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-fluid contact">
+                <p class="text-ft" style="font-size: 17px;margin-bottom: 10px;"><strong style="font-size: 26px;font-family:'OpenSansBold';">THEDOGHOUSE</strong> nơi cung cấp những người bạn</p>
+                <div class="row">
+                    <div class="col-md-6">
+                    <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">liên hệ với
+                        chúng tôi</strong>
+                    <form method="POST" action="" class="form" id="form-2">
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your name" name="fullname" type="text" class="form-control"
+                                id="fullname_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your email" name="email" type="text" class="form-control" id="email_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-12 form-group">
+                            <textarea cols="30" rows="10" placeholder="yourmessage" class="form-control" name="content"
+                                id="content_2"></textarea>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-3 col-xl-3">
+                                <button class="submit-button form-submit"><strong>SUBMIT</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                   
+                    <div class="col-md-3 information">
+                        <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">information</strong>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Thú Cưng Company
+                            <br><span>1A Nam Kỳ Khởi Nghĩa Street</span>
+                            <br><span>Thành phố HCM</span>
+                        </p>
+                        <p class="phone"><i class="fas fa-phone-square"></i> +84 (Phone) 89.777.999</p>
+                        <p class="fax"><i class="fas fa-print"></i> +077 (FAX) 0011223</p>
+                        <p class="email"><i class="fas fa-envelope"></i> info@bak-thucungcompany.com</p>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="thongke">
+                            <h3>Thống kê truy cập</h3>
+                            <p><img src="./upload/baiviet/dangonline.png" alt="đang online" /> Đang online :<span
+                                    class="black">59</span></p>
+                            <p><img src="./upload/baiviet/tuan.png" alt="Hôm qua" /> Truy cập tuần : <span
+                                    class="black">2979</span></p>
+                            <p><img src="./upload/baiviet/thang.png" alt="tháng" /> Truy cập tháng : <span
+                                    class="black">7613</span></p>
+                            <p><img src="./upload/baiviet/tong.png" alt="tổng" /> Tổng truy cập : <span
+                                    class="black">442112</span></p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+       <!-- FOOTER -->
+       <!-- Copyright -->
+       <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                   <p><script>
+                    let d = new Date();
+                    let html = `&COPY; ${d.getFullYear()} Copyright Shop <strong>THEDOGHOUSE</strong> `;
+                    document.write(html);
+                </script>
+                   </p> 
+                </div>
+                <!-- Back to top -->
+                <button class="bttop" id="bttop">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+       </footer>
+         <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+         <script src="./js/validator.js"></script>
+       	 <script type="text/javascript" src="js/script.js"></script>
+	     <script type="text/javascript" src="js/scriptIndex.js"></script>
+        <!-- END FOOTER -->
+         <script src="js/login.js"></script>
+         <Script>
+            // Mong muốn
+            Validator({
+                // làm việc với form 1
+                form: '#form-2',
+                formGroupSelector: '.form-group',
+                errorSelector: '.form-message',
+                rules: [
+                    Validator.isRequired('#fullname_2', 'Vui lòng nhập tên đầy đủ'),
+                    Validator.maxLength('#fullname_2', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                    Validator.isRequired('#email_2', 'Vui lòng nhập địa chỉ email'),
+                    Validator.isEmail('#email_2', 'Email không hợp lệ'),
+                    Validator.isRequired('#content_2', 'Vui lòng nhập nội dung'),
+                ],
+                onSubmit: function (data) {
+                    // Call API
+                    console.log(data)
+                }
+            });
+        </Script>
+        
+</body>
+</html>

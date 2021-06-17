@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sản Phẩm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/original.jpg">
+    <link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css/own/owl.carousel.css">
+    <link rel="stylesheet" href="css/own/owl.theme.default.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css'>
+    <link rel="stylesheet" href="./jbox/jBox.css">
+    <link rel="stylesheet" href="./jbox/jBox.Confirm.css">
+    <script type="text/javascript" src="lib/WOW-master/dist/wow.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <!-- TOP NAVBAR -->
+    <div>
+        <div class="topBar col-md-12">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                <a class="active" href="index.html">Trang Chủ</a>
+                <hr>
+                <a href="san-pham.html">Sản Phẩm</a>
+                <hr>
+                <a href="san-pham.html">Giới Thiệu</a>
+                <hr>
+                <a href="lien-he.html">Liên Hệ</a>
+                <hr>
+                <a href="huong-dan-mua-hang.html">Hướng Dẫn Sử Dụng</a>
+                <hr>
+                <a href="quan-ly-don-hang.html">Đơn Hàng</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-6 col-xl-6  pull-left">
+                    <ul class="list-inline pull-left">
+                        <li><a href="#"><i style="margin-top: 20px;" class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVBAR -->
+
+    <!-- HEADER TOP -->
+    <div class="col-lg-12 col-md-12 col-sm-12 header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo" style="margin: 5px 0px 5px 0px">
+                    <a href="#"><img src="img/ngon.jpg" alt="img-reponsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs logo1" style="margin: 5px 0px 5px 0px">
+                    <a href="#"><img src="img/897.jpg" alt="img-reponsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs header__hotline">
+                    <form action="" style="padding-top: 25px">
+                        <div class="header__hotline--bg">
+                            <p class="header__hotline--phone"><span><strong>Hotline: </strong><a
+                                        href="tel:0989.777.999">0989.777.999</a></span></p>
+                            <p class="header__hotline--email"><span><strong>Email: </strong><a
+                                        href="mailto:support@myphamgoda.com">support@Thedoghouse.com</a></span></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs search">
+                    <form action="" style="padding-top: 25px;position: relative;top:75px; left: 270px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control search" placeholder="Bạn muốn tìm gì?..."
+                                name="search">
+                            <div class="input-group-btn">
+                                <button class="btn bt-search" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- END HEADER TOP -->
+
+    <!-- NAVBAR DESTOP -->
+    <nav class="col-xs-12 navbar navbar-default bg-color" id="menu"
+        style="position: sticky; margin: 0px; z-index: 99; top: 0px;">
+        <div class="container-fluid">
+            <span class="hidden-lg hidden-md header__btn">
+                <div id="btn-cate main"><i class=" col-xs-1 " aria-hidden="true"></i></div>
+                <span style="cursor:pointer" id="menu-hide" onclick="openNav()">
+                    <i style="color: #ec0000; font-size: 16px;" class="fa fa-bars"></i>
+                </span>
+            </span>
+            <form action="" style="padding-top: 25px" class="hidden-lg hidden-md">
+                <div class="input-group">
+                    <input type="text" id="result" class="form-control search" placeholder="Bạn muốn tìm gì?..."
+                        name="search">
+                    <div class="input-group-btn">
+                        <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search"
+                                style="color:grey"></i></button>
+                    </div>
+                    <input type="hidden" name="action" value="san-pham">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                <li class="acs-list"><a href="#" id="btn-category"><i class="fa fa-navicon"></i> Danh Mục Sản Phẩm</a>
+                </li>
+                <li style="background-color:#555"><a href="index.html"><i class="fa fa-home"
+                            style="font-size: 16px"></i></a></li>
+                <li class="active"><a href="san-pham.html">Sản Phẩm </a></li>
+                <li><a href="gioi-thieu.html">Giới Thiệu </a></li>
+                <li><a href="lien-he.html">Liên Hệ</a></li>
+                <li><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+                <li><a href="quan-ly-don-hang.html">Quản Lý Đơn Hàng</a></li>
+            </ul>
+            <span class="hidden-lg hidden-md menu__cart">
+                <a href="#" id="sub-btn-cart-detail"><i style="font-size: 16px;margin-left: 15px;"
+                        class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+            </span>
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs bg-color">
+                <li><a href="#" id="btn-cart-detail" title="Giỏ Hàng"><i class="fa fa-shopping-basket"></i></a></li>
+            </ul>
+    </nav>
+    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default acs-list" id="Categories"
+        style="position: sticky; z-index: 99;top: 50px;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-pug.html">Chó Pug </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-corgi.html"> Chó Corgi </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-husky.html">Chó Husky </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-shiba.html">Chó Shiba </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-becgie.html">Chó Becgie </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-akita.html">Chó Akita </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-puppy.html">Chó Puppy </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="clear: both"></div>
+    <!-- END NAVBAR DESTOP -->
+    <main class="col-md-12 san-pham">
+        <div class="container">
+            <ul class="breadcrumb" style="margin-top: 10px; margin-bottom: 0px; margin-left: -15px;">
+                <li class="breadcrumb-item">
+                    <a href="index.html" itemprop="url" title="trang chủ"><span itemprop="title">Trang Chủ</span></a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="san-pham.html" itemprop="url" title="danh mục"><span itemprop="title">Sản Phẩm</span></a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+            <div class="row">
+                <div class="col-md-3 widget-category">
+                    <div class="hidden-xs hidden-sm col-md-12 col-lg-12" id="left_column">
+                        <div class="block left-module">
+                            <p class="title_block">Danh mục thú cưng
+                            </p>
+                            <div class="block_content">
+                                <div class="layered layered-category">
+                                    <ul class="tree-menu">
+                                        <li class="active">
+                                            <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="san-pham.html">Tất cả sản phẩm</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-pug.html">Chó Pug</a>
+                                        </li>
+                                        <li> <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-corgi.html">Chó Corgi</a>
+                                        </li>
+                                        <li> <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-husky.html">Chó Husky</a>
+                                        </li>
+                                        <li> <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-shiba.html">Chó Shiba</a>
+                                        </li>
+                                        <li> <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-becgie.html">Chó Becgie</a>
+                                        </li>
+                                        <li> <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-akita.html">Chó Akita</a>
+                                        </li>
+                                        <li>
+                                            <span><i class="fas fa-angle-double-right"></i></span>
+                                            <a href="chi-tiet-puppy.html">Chó Puppy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="block left-module">
+                            <p class="title_block">Hãng Sản Xuất</p>
+                            <div class="block_content">
+                                <!-- layered -->
+                                <div class="layered layered-category">
+                                    <div class="layered-content">
+                                        <ul class="tree-menu">
+                                            <li class="active">
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <a href="#">
+                                                    Tất cả sản phẩm
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <a href="#">
+                                                    Xuất xứ từ Anh </a>
+                                            </li>
+                                            <li>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <a href="#">
+                                                    Xuất xứ từ Mỹ </a>
+                                            </li>
+                                            <li>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <a href="#">
+                                                    Xuất xứ từ Hàn Quốc </a>
+                                            </li>
+                                            <li>
+                                                <span><i class="fas fa-angle-double-right"></i></span>
+                                                <a href="#">
+                                                    Xuất xứ từ Nhật Bản </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- ./layered -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="product">
+                                <h3 align="center">Tất cả sản phẩm</h3>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="view-mode pull-right">
+                                <div>
+                                    <label>Sắp xếp theo:</label>
+                                    <select>
+                                        <option value="">mặc định</option>
+                                        <option value="">giá tăng dần</option>
+                                        <option value="">giá giảm dần</option>
+                                        <option value="">từ A-Z</option>
+                                        <option value="">từ Z-A</option>
+                                        <option value="">giá mới nhất</option>
+                                    </select>
+                                </div>
+                                <span class="type1"><i class="fa fa-th"></i></span>
+                                <a class="type2" href="#"><i class="fa fa-th-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-2 pro-active" id="sub-pro-0">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/akita2.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Akita<i id="heart0" style="color:white;font-size: 14px;"
+                                            class="far fa-heart"></i></a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">6,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-0">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon" id="wishlist">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-1">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/akita3.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Akita</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">4,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-1">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-2">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive" src="img/dogs/corgi.jpg"
+                                    alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Corgi</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">5,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-2">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-3">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/becgie1.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Becgie</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">9,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-3">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-4">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/samoyed.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Samoyed</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">10,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-4">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-5">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/sshiba2.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Shiba</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">4,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-5">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-6">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/shiba3.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Shiba</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">4,500,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-6">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pro-active" id="sub-pro-7">
+                        <div class="product-container">
+                            <div class="image">
+                                <img style="width: 180px;height: 180px;" class="img-responsive"
+                                    src="img/dogs/puppy1.jpg" alt="">
+                            </div>
+                            <div class="product-meta">
+                                <h5 class="name">
+                                    <a class="product-name" style="font-family: Arial;position: relative; left:50px;"
+                                        href="#" title="">Chó Puppy</a>
+                                </h5>
+                                <hr>
+                                <span class="product-price"><span class="money"><strong
+                                            style="color: red; position: relative; left: 50px;">8,000,000
+                                            VND</strong></span></span>
+                            </div>
+                        </div>
+                        <div class="button-1 clearfix" id="btn-7">
+                            <div class="cart icon">
+                                <a class="btn btn-outline-inverse" href="" title="Thêm vào giỏ hàng">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </div>
+
+                            <div class="quickview icon">
+                                <a class="btn btn-outline-inverse" href="#" id="btn-view" title="Xem nhanh">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                            </div>
+
+                            <div class="wishlist icon">
+                                <a class="btn btn-outline-inverse" href="#" title="Thêm vào danh sách yêu thích">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <ul class="pagination pull-right">
+                    <li class="active"><a href="san-pham4.html">Prev</a></li>
+                    <li><a href="san-pham.html">1</a></li>
+                    <li><a href="san-pham2.html">2</a></li>
+                    <li><a href="san-pham3.html">Next</a></li>
+                </ul>
+            </div>
+    </main>
+    <!-- CONTRACT -->
+    <section id="contact">
+        <div class="container-fluid contact">
+            <p class="text-ft" style="font-size: 17px;margin-bottom: 10px;"><strong
+                    style="font-size: 26px;font-family:'OpenSansBold';">THEDOGHOUSE</strong> nơi cung cấp những người
+                bạn</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">liên hệ với
+                        chúng tôi</strong>
+                    <form method="POST" action="" class="form" id="form-2">
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your name" name="fullname" type="text" class="form-control"
+                                id="fullname_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your email" name="email" type="text" class="form-control" id="email_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-12 form-group">
+                            <textarea cols="30" rows="10" placeholder="yourmessage" class="form-control" name="content"
+                                id="content_2"></textarea>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-3 col-xl-3">
+                                <button class="submit-button form-submit"><strong>SUBMIT</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 information">
+                    <strong
+                        style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">information</strong>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> Thú Cưng Company
+                        <br><span>1A Nam Kỳ Khởi Nghĩa Street</span>
+                        <br><span>Thành phố HCM</span>
+                    </p>
+                    <p class="phone"><i class="fas fa-phone-square"></i> +84 (Phone) 89.777.999</p>
+                    <p class="fax"><i class="fas fa-print"></i> +077 (FAX) 0011223</p>
+                    <p class="email"><i class="fas fa-envelope"></i> info@bak-thucungcompany.com</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="thongke">
+                        <h3>Thống kê truy cập</h3>
+                        <p><img src="./upload/baiviet/dangonline.png" alt="đang online" /> Đang online :<span
+                                class="black">59</span></p>
+                        <p><img src="./upload/baiviet/tuan.png" alt="Hôm qua" /> Truy cập tuần : <span
+                                class="black">2979</span></p>
+                        <p><img src="./upload/baiviet/thang.png" alt="tháng" /> Truy cập tháng : <span
+                                class="black">7613</span></p>
+                        <p><img src="./upload/baiviet/tong.png" alt="tổng" /> Tổng truy cập : <span
+                                class="black">442112</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTRACT -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                    <p>
+                        <script>
+                            let d = new Date();
+                            let html = `&COPY; ${d.getFullYear()} Copyright Shop <strong>THEDOGHOUSE</strong> `;
+                            document.write(html);
+                        </script>
+                    </p>
+                </div>
+                <!-- Back to top -->
+                <button class="bttop" id="bttop">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="./jbox/jBox.Confirm.js"></script>
+    <script src="./jbox/jBox.js"></script>
+    <script src="./jbox/Demo.js"></script>
+    <script src="./js/validator.js"></script>
+    <script type="text/javascript" src="./js/scriptIndex.js"></script>
+    <script src='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js'></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        Validator({
+            // làm việc với form 2
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname_2', 'Vui lòng nhập tên đầy đủ'),
+                Validator.maxLength('#fullname_2', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                Validator.isRequired('#email_2', 'Vui lòng nhập địa chỉ email'),
+                Validator.isEmail('#email_2', 'Email không hợp lệ'),
+                Validator.isRequired('#content_2', 'Vui lòng nhập nội dung'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data)
+            }
+        });
+    </script>
+</body>
+
+</html>

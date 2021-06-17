@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sản Phẩm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/original.jpg">
+    <link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css/own/owl.carousel.css">
+    <link rel="stylesheet" href="css/own/owl.theme.default.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css'>
+    <link rel="stylesheet" href="./jbox/jBox.css">
+    <link rel="stylesheet" href="./jbox/jBox.Confirm.css">
+    <script type="text/javascript" src="lib/WOW-master/dist/wow.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+	<!-- TOP NAVBAR -->
+	<div>
+		<div class="topBar col-md-12">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >x</a>
+				<a class="active" href="index.html">Trang Chủ</a>
+				<hr>
+				<a href="san-pham.html">Sản Phẩm</a>
+				<hr>
+				<a href="gioi-thieu.html">Giới Thiệu</a>
+				<hr>
+				<a href="lien-he.html">Liên Hệ</a>
+				<hr>
+				<a href="huong-dan-mua-hang.html">Hướng Dẫn Sử Dụng</a>
+				<hr>
+				<a href="quan-ly-don-hang.html">Đơn Hàng</a>
+			</div>
+			<div class="row">
+				
+						
+				<div class="col-lg-6 col-md-6 col-xl-6 pull-left">
+					<ul class="list-inline pull-left">
+						<li><a href="#"><i style="margin-top: 20px;" class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+					</ul>
+				</div> 		
+			</div>
+		</div>
+	</div>
+	<!-- END TOP NAVBAR -->
+
+	<!-- HEADER TOP -->
+	<div class="col-lg-12 col-md-12 col-sm-12 header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo">
+					<a href="#"><img class="img-fluid" src="img/ngon.jpg" alt="img-responsive"></a>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 hidden-xs logo1">
+					<a href="#"><img class="img-fluid" src="img/897.jpg" alt="img-responsive"></a>	
+				</div>
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs header__hotline">
+					<form action="" style="padding-top: 25px">
+                        <div class="header__hotline--bg">
+                            <p class="header__hotline--phone"><span><strong>Hotline: </strong><a
+                                        href="tel:0989.777.999">0989.777.999</a></span></p>
+                            <p class="header__hotline--email"><span><strong>Email: </strong><a
+                                        href="mailto:support@myphamgoda.com">support@Thedoghouse.com</a></span></p>
+                        </div>
+					</form>	
+				</div>		
+				    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs search">
+                    <form action="" style="padding-top: 25px;position: relative;top:75px; left: 270px;">
+                            <div class="input-group">
+                                <input type="text"  class="form-control search" placeholder="Bạn muốn tìm gì?..." name="search">
+                                <div class="input-group-btn" >
+                                    <button class="btn bt-search" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                               
+                            </div>
+                    </form>
+                </div>
+
+			</div>
+			
+		</div>	
+	</div>		
+	<!-- END HEADER TOP -->
+
+	<!-- NAVBAR DESTOP -->
+	 <nav class="col-xs-12 navbar navbar-default bg-color" id="menu" style="position: sticky; margin: 0px; z-index: 99; top: 0px;">
+            <div class="container-fluid">
+                <span class="hidden-lg hidden-md header__btn">
+                    <div id="btn-cate main"><i class=" col-xs-1 " aria-hidden="true"></i></div>
+                    <span style="cursor:pointer" id="menu-hide" onclick="openNav()">
+                        <i style="color: #ec0000; font-size: 16px;" class="fa fa-bars"></i>
+                    </span>
+                </span>
+                <form action="" style="padding-top: 25px" class="hidden-lg hidden-md">
+                    <div class="input-group">
+                        <input type="text" id="result" class="form-control search" placeholder="Bạn muốn tìm gì?..." name="search" >
+                        <div class="input-group-btn">
+                            <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search" style="color:grey"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="san-pham">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                    <li class="acs-list"><a href="#" id="btn-category"><i class="fa fa-navicon"></i> Danh Mục Sản Phẩm</a></li>
+                    <li style="background-color:#555"><a href="index.html"><i class="fa fa-home" style="font-size: 16px"></i></a></li>
+                    <li><a href="san-pham.html">Sản Phẩm </a></li>                    
+                    <li><a href="gioi-thieu.html">Giới Thiệu </a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                    <li class="active"><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="quan-ly-don-hang.html">Quản Lý Đơn Hàng</a></li>
+                </ul>
+                <span class="hidden-lg hidden-md menu__cart">
+                    <a href="#" id="sub-btn-cart-detail"><i style="font-size: 16px;margin-left: 15px;" class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                </span>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs bg-color">
+                    <li><a href="#" id="btn-cart-detail" title="Giỏ Hàng"><i class="fa fa-shopping-basket"></i></a></li>
+                </ul>
+        </nav>
+		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default acs-list" id="Categories"
+        style="position: sticky; z-index: 99;top: 50px;">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-pug.html">Chó Pug </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-corgi.html"> Chó Corgi </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-husky.html">Chó Husky </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-shiba.html">Chó Shiba </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-becgie.html">Chó Becgie </a>
+                    </li>
+                     <li class="dropdown">
+                        <a href="chi-tiet-akita.html">Chó Akita </a>
+                    </li>
+                     <li class="dropdown">
+                        <a href="chi-tiet-puppy.html">Chó Puppy </a>
+                    </li>
+                </ul> 
+            </div>
+        </nav> 
+        <div style="clear: both"></div> 
+	<!-- END NAVBAR DESTOP -->
+        <main class="col-md-12" style="background-color: white">
+            <div class="container">
+                <ul class="breadcrumb" style="margin-bottom: 0px; margin-top: 10px;margin-left: -15px;">
+                    <li class="breadcrumb-item">
+                      <a href="index.html" itemprop="url" title="trang chủ"><span itemprop="title">Trang Chủ</span></a>
+                    </li>
+                    <li class="breadcrumb-item">
+                      <a href="huong-dan-mua-hang.html" itemprop="url" title="danh mục"><span itemprop="title">Hướng Dẫn Mua Hàng</span></a>
+                    </li>
+                  </ul>
+                  <div class="clear"></div>
+                <div class="row">
+                    <div class="huong-dan">
+                        <table>
+                            <tbody>
+                                <tr>
+                                     <td class="style1"><strong>1. Lựa chọn thú cưng</strong></td>
+                                    <td>Lựa chọn các mẫu ưng ý nhất trên website: <strong>Thedoghouse.com</strong></td> 
+                                </tr>
+                                <tr>
+                                    <td class="style1"> 
+                                        <strong>2.  Xác Nhận ( Mặt hàng của quý khách lựa chọn còn hay không ) </strong>
+                                    </td>
+                                    <td>
+                                        <p>Cách 1: Liên hệ nhân viên tư vấn online của shop trên website (ô tư vấn ở vị trí phía dưới cùng website, bên tay phải) </p>
+                                        <p> Cách 2: Điện thoại trực tiếp đến số: 0932.538.468 </p>
+                                    </td>              
+                                 </tr>
+                                 <tr>
+                                     <td class="style1">
+                                         <strong>3. Chọn Hình Thức Thanh Toán</strong>
+                                        </td>
+                                    <td>
+                                        <p>Cách 1: Giao hàng Thu Tiền (COD) Nhân viên giao hàng sẽ giao hàng tới địa chị Quý khách cung cấp và thu tiền. </p>
+
+                                        <p>Cách 2: Chuyển khoản trực tiếp tới <strong>Thedoghouse.com</strong>: Thường được sử dụng khi khách hàng muốn Hải Triều chuyển phát nhanh món quà Quý khách chọn tới bạn bè, người thân
+                                        Xem Thông Tin Chuyển Khoản </p>
+
+                                        <p>Cách 3: Thanh toán an toàn qua Bảo Kim: Chứng nhận thanh toán an toàn của <strong>Thedoghouse.com</strong>: Click Here
+                                        support@Thedoghouse.com </p>
+
+                                        <p>Cách 4: Đặt hàng Online tại website <strong>Thedoghouse.com</strong> sẽ liên hệ với Quý khách trong giờ hành chính, sau 02 giờ từ khi Quý khách đặt hàng. (Hướng dẫn chi tiết ở phía dưới)</p>
+                                    </td>          
+                                 </tr>
+                                 <tr>
+                                    <td class="style1"> <strong>4. Gửi thông tin người nhận</strong></td>
+                                    <td>
+                                        <p>Sau khi đặt hàng/chuyền tiền thành công Quý khách nhắn tin (hoặc email) thông báo đã đặt hàng/chuyển tiền thành công và thông tin người nhận hàng theo mẫu sau để chúng tôi tiến hành chuyển hàng cho Quý khách.</p>
+                                        <p>Họ tên người nhận:</p>
+                                        <p>Điện thoại liên hệ:</p>
+                                        <p>Địa chỉ: </p>
+                                        <p>Mã Số hàng Quý khách Chọn:</p>
+                                        <p>Sản phẩm gì? Màu gì?</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                     <td class="style1"><strong>5. Nhận Hàng </strong></td>    
+                                    <td> 
+                                        <p>Đối với khách hàng ở HCM: Nhân viên <strong>Thedoghouse.com</strong> sẽ giao hàng và thu tiền trong ngày.</p>
+                                        <p>Đối với khách hàng sử dụng hình thức giao hàng COD/Chuyển Khoản: Sau khi xác nhận thông tin (thông tin đặt hàng, thông tin chuyển khoản), Chúng tôi sẽ tiến hành gửi hàng tới cho Quý khách (Chuyển Phát Nhanh) </p>
+                                        <p>Sau 24h – 48h Quý khách sẽ nhận được hàng, có hộp cứng bao ngoài, có giấy bảo hành đầy đủ.</p>
+                                    </td>
+                               </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+                    <div class="hd">
+                        <div class="title">HƯỚNG DẪN ĐẶT HÀNG NGAY TRÊN WEBSITE: </div>
+                            <p>1. Quý khách lựa chọn các mẫu trên website <strong>Thedoghouse.com</strong>. </p>
+                            <p>2. Bấm vào “Thêm Vào Giỏ Hàng” sản phẩm quý khách ưng ý.</p>
+                        <div class="gh"> Thêm vào giỏ hàng </div>
+                            <p>3. Tiếp tục bấm vào mục “Thanh Toán” ở Popup hiện ra.</p>
+                            <p>4. Thực hiện theo các bước tại trang thanh toán. (Quý khách có thể vào email để xem đơn hàng đã đặt) </p>
+                            <p>5. Sau khi hoàn thành, chúng tôi sẽ liên hệ và xác nhận lại đơn hàng và tiến hành giao hàng tới cho Quý khác</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section id="contact">
+            <div class="container-fluid contact">
+                <p class="text-ft" style="font-size: 17px;margin-bottom: 10px;"><strong
+                        style="font-size: 26px;font-family:'OpenSansBold';">THEDOGHOUSE</strong> nơi cung cấp những người
+                    bạn</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">liên hệ với
+                            chúng tôi</strong>
+                        <form method="POST" action="" class="form" id="form-2">
+                            <div class="col-md-6 form-group">
+                                <input placeholder="your name" name="fullname" type="text" class="form-control"
+                                    id="fullname_2">
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input placeholder="your email" name="email" type="text" class="form-control" id="email_2">
+                                <span class="form-message"></span>
+                            </div>
+                            <br>
+                            <div class="col-md-12 form-group">
+                                <textarea cols="30" rows="10" placeholder="yourmessage" class="form-control" name="content"
+                                    id="content_2"></textarea>
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 col-3 col-xl-3">
+                                    <button class="submit-button form-submit"><strong>SUBMIT</strong></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="col-md-3 information">
+                        <strong
+                            style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">information</strong>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> Thú Cưng Company
+                            <br><span>1A Nam Kỳ Khởi Nghĩa Street</span>
+                            <br><span>Thành phố HCM</span>
+                        </p>
+                        <p class="phone"><i class="fas fa-phone-square"></i> +84 (Phone) 89.777.999</p>
+                        <p class="fax"><i class="fas fa-print"></i> +077 (FAX) 0011223</p>
+                        <p class="email"><i class="fas fa-envelope"></i> info@bak-thucungcompany.com</p>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="thongke">
+                            <h3>Thống kê truy cập</h3>
+                            <p><img src="./upload/baiviet/dangonline.png" alt="đang online" /> Đang online :<span
+                                    class="black">59</span></p>
+                            <p><img src="./upload/baiviet/tuan.png" alt="Hôm qua" /> Truy cập tuần : <span
+                                    class="black">2979</span></p>
+                            <p><img src="./upload/baiviet/thang.png" alt="tháng" /> Truy cập tháng : <span
+                                    class="black">7613</span></p>
+                            <p><img src="./upload/baiviet/tong.png" alt="tổng" /> Tổng truy cập : <span
+                                    class="black">442112</span></p>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+           <!-- FOOTER -->
+           <!-- Copyright -->
+     <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                   <p><script>
+                    let d = new Date();
+                    let html = `&COPY; ${d.getFullYear()} Copyright Shop <strong>THEDOGHOUSE</strong> `;
+                    document.write(html);
+                </script>
+                   </p> 
+                </div>
+                <!-- Back to top -->
+                <button class="bttop" id="bttop">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/validator.js"></script>
+    <script type="text/javascript" src="./js/scriptIndex.js"></script>
+    <script src='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js'></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        Validator({
+            // làm việc với form 2
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname_2', 'Vui lòng nhập tên đầy đủ'),
+                Validator.maxLength('#fullname_2', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                Validator.isRequired('#email_2', 'Vui lòng nhập địa chỉ email'),
+                Validator.isEmail('#email_2', 'Email không hợp lệ'),
+                Validator.isRequired('#content_2', 'Vui lòng nhập nội dung'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data)
+            }
+        });
+    </script>
+         
+</body>
+</html>

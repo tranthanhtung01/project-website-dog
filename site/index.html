@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/original.jpg">
+    <link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css/own/owl.carousel.css">
+    <link rel="stylesheet" href="css/own/owl.theme.default.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css'>
+    <script type="text/javascript" src="lib/WOW-master/dist/wow.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <!-- TOP NAVBAR -->
+    <div>
+        <div class="topBar col-md-12">
+            <div id="mySidenav" class="sidenav hidden-lg hidden-md">
+                <a href="#" class="closebtn" onclick="closeNav()">x</a>
+                <a class="active" href="index.html">Trang Chủ</a>
+                <hr>
+                <a href="san-pham.html">Sản Phẩm </a>
+                <hr>
+                <a href="gioi-thieu.html">Giới Thiệu</a>
+                <hr>
+                <a href="lien-he.html">Liên Hệ</a>
+                <hr>
+                <a href="huong-dan-mua-hang.html">Hướng Dẫn Sử Dụng</a>
+                <hr>
+                <a href="quan-ly-don-hang.html">Đơn Hàng</a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-6 col-xl-6  pull-left">
+                    <ul class="list-inline pull-left">
+                        <li><a href="#"><i style="margin-top: 20px;" class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+                    <ul class="list-inline pull-right top-right">
+                        <!-- pull right là đẩy phải -->
+                        <li class="account-login ">
+                            <span class="block">
+                                <a style="background: grey;border-radius: 5px;margin-top: 10px;" class="login"
+                                    id="btn-login" href="#">
+                                    <strong>Đăng Nhập</strong> </a>
+                                <small>|</small>
+                                <a style="background: grey;border-radius: 5px;padding-right: 15px;" class="sign-up"
+                                    id="btn-register" href="#"> <strong>Đăng Ký</strong></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVBAR -->
+
+    <!-- HEADER TOP -->
+    <div class="col-lg-12 col-md-12 col-sm-12 header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo">
+                    <a href="#"><img class="img-fluid" src="img/ngon.jpg" alt="img-responsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 hidden-xs logo1">
+                    <a href="#"><img class="img-fluid" src="img/897.jpg" alt="img-responsive"></a>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs header__hotline">
+                    <form action="" style="padding-top: 25px">
+                        <div class="header__hotline--bg">
+                            <p class="header__hotline--phone"><span><strong>Hotline: </strong><a
+                                        href="tel:0989.777.999">0989.777.999</a></span></p>
+                            <p class="header__hotline--email"><span><strong>Email: </strong><a
+                                        href="mailto:support@myphamgoda.com">support@Thedoghouse.com</a></span></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-sm hidden-xs search">
+                    <form action="" style="padding-top: 25px;position: relative;top:75px; left: 270px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control search" placeholder="Bạn muốn tìm gì?..."
+                                name="search">
+                            <div class="input-group-btn">
+                                <button class="btn bt-search" type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END HEADER TOP -->
+
+    <!-- NAVBAR DESTOP -->
+    <nav class="col-xs-12 navbar navbar-default " id="menu"
+        style="position: sticky; margin: 0px; z-index: 99; top: 0px;">
+        <div class="container-fluid">
+            <span class="hidden-lg hidden-md header__btn">
+                <div id="btn-cate main"><i class=" col-xs-1 " aria-hidden="true"></i></div>
+                <span style="cursor:pointer" id="menu-hide" onclick="openNav()">
+                    <i style="color: #ec0000; font-size: 16px;" class="fa fa-bars"></i>
+                </span>
+            </span>
+            <form action="" style="padding-top: 25px" class="hidden-lg hidden-md">
+                <div class="input-group">
+                    <input type="text" id="result" class="form-control search" placeholder="Bạn muốn tìm gì?..."
+                        name="search">
+                    <div class="input-group-btn">
+                        <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search"
+                                style="color:grey"></i></button>
+                    </div>
+                    <input type="hidden" name="action" value="san-pham">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                <li class="acs-list"><a href="#" id="btn-category"><i class="fa fa-navicon"></i> Danh Mục Sản Phẩm</a>
+                </li>
+                <li style="background-color:#555"><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="san-pham.html">Sản Phẩm </a></li>
+                <li><a href="gioi-thieu.html">Giới Thiệu </a></li>
+                <li><a href="lien-he.html">Liên Hệ</a></li>
+                <li><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+                <li><a href="quan-ly-don-hang.html">Quản Lý Đơn Hàng</a></li>
+            </ul>
+            <span class="hidden-lg hidden-md menu__cart">
+                <a href="#" data-target="#cartModal" data-toggle="modal" id="sub-btn-cart-detail"><i
+                        style="font-size: 16px;margin-left: 15px;" class=" fa fa-shopping-basket"
+                        aria-hidden="true"></i></a>
+            </span>
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs bg-color btn-cart">
+                <li><a href="#" data-target="#cartModal" data-toggle="modal" id="btn-cart-detail" title="Giỏ Hàng"><i
+                            class="fa fa-shopping-basket"></i></a></li>
+            </ul>
+    </nav>
+    <nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default acs-list " id="Categories"
+        style="position: sticky; z-index: 99;top: 50px;">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-pug.html">Chó Pug </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-corgi.html"> Chó Corgi </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-husky.html">Chó Husky </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-shiba.html">Chó Shiba </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-becgie.html">Chó Becgie </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-akita.html">Chó Akita </a>
+                </li>
+                <li class="dropdown">
+                    <a href="chi-tiet-puppy.html">Chó Puppy </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="clear: both"></div>
+    <!-- END NAVBAR DESTOP -->
+    <!-- CAROUSEL -->
+    <div class="slideshow col-lg-12 col-md-12">
+        <div class="row">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active ">
+                        <img class="img-fluid " src="img/slider1.jpg" alt="slider 1">
+                    </div>
+
+                    <div class="item">
+                        <img class="img-fluid" src="img/slider_2.jpg" alt="slider 2">
+                    </div>
+
+                    <div class="item">
+                        <img class="img-fluid" src="img/slider_3.jpg" alt="slider 3">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- END CAROUSEL -->
+    <!-- PET -->
+    <section id="animal">
+        <div class="container-fluid animal">
+            <div class="row ">
+                <div class="col-12 col-md-12 col-xl-12  hidden-sm hidden-xs">
+                    <p style="margin: 25px;text-align: center;">Sau nhiều năm hoạt động trong chăm sóc, làm đẹp và cung
+                        cấp thú cưng cho thị trường.
+                        Chúng tôi tự hào là đơn vị xây dựng được niềm tin khách hàng thông qua chất lượng hãy đến với
+                        chúng tôi
+                        <strong style="font-size:14px ;"> THEDOGHOUSE </strong> tại TP.Hồ Chí Minh
+                    </p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-12 col-xl-12 hidden-lg hidden-md">
+                    <p style="margin: 25px;text-align: justify;">Sau nhiều năm hoạt động trong chăm sóc, làm đẹp và cung
+                        cấp thú cưng cho thị trường.
+                        Chúng tôi tự hào là đơn vị xây dựng được niềm tin khách hàng thông qua chất lượng hãy đến với
+                        chúng tôi
+                        <strong style="font-size: 14px;"> THEDOGHOUSE </strong> tại TP.Hồ Chí Minh
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="btn btn-default " onclick="hienthi('all')">All</button>
+            <button type="button" class="btn btn-default " onclick="hienthi('corgi')">HOÀNG GIA</button>
+            <button type="button" class="btn btn-default " onclick="hienthi('husky')">CHÓ CẢNH</button>
+            <button type="button" class="btn btn-default " onclick="hienthi('mountain')">CHÓ SĂN</button>
+            <div class="row">
+                <div class="col-md-3 col-xs-6 corgi">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s1.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-samoyed.html"><i
+                                            class="fas fa-search "></i></a></div><br>
+                                Samoyed
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s2.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-pug.html"><i
+                                            class="fas fa-search "></i></a></div><br>
+                                Pug
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s3.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-corgi.html"><i
+                                            class="fas fa-search "></i></a></div><br>
+                                Corgi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s4.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-husky.html"><i
+                                            class="fas fa-search "></i></a></div><br>
+                                Husky
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s5.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-shiba.html"><i
+                                            class="fas fa-search"></i></a></div><br>
+                                Shiba
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 mountain">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s6.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-becgie.html"><i
+                                            class="fas fa-search"></i></a></div><br>
+                                Becgie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s7.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-akita.html"><i
+                                            class="fas fa-search"></i></a></div><br>
+                                Akita
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-xs-6 husky">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="img/s8.png" alt="">
+                        <div class="overlap">
+                            <div>
+                                <div class="search animated bounce"><a href="chi-tiet-puppy.html"><i
+                                            class="fas fa-search"></i></a></div><br>
+                                Puppy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <div id="fanpage">
+        <img class="img-fluid" src="./img/before_head.png">
+    </div>
+    <!-- cam kết -->
+    <div id="container">
+        <div class="chinhsach_home">
+            <div class="img-cs">
+                <img class="img-fluid" src="./img/nguoi.png">
+            </div>
+            <div class="container_main">
+                <div class="box_chinhsach">
+                    <div class="icon-ck">
+                        <img class="img-fluid" src="./img/icon_xuong.png">
+                    </div>
+                    <h2>CAM KẾT CỦA THEDOGHOUSE</h2>
+                    <div class="margin-cs">
+                        <div id="owl-camket" class="owl-carousel owl-theme3">
+                            <div class="item_cs">
+                                <div class="images-cs">
+                                    <a href="#">
+                                        <img class="transition img-fluid" src="upload/baiviet/dv2-3091.png"
+                                            alt="100% thuần chủng" />
+                                    </a>
+                                </div>
+                                <div class="des-cs">
+                                    <a href="#">
+                                        <h3>100% thuần chủng</h3>
+                                    </a>
+                                    <p>THEDOGHOUSE Shop cam kết chỉ bán chó thuần chủng, không lai tạp, không phối
+                                        giống cận huyết.</p>
+                                </div>
+                            </div>
+                            <div class="item_cs">
+                                <div class="images-cs">
+                                    <a href="#">
+                                        <img class="transition img-fluid" src="upload/baiviet/logo-1787.jpg"
+                                            alt="Tiêm đầy đủ Vắc-Xin" />
+                                    </a>
+                                </div>
+                                <div class="des-cs">
+                                    <a href="#">
+                                        <h3>Tiêm đầy đủ Vắc-Xin</h3>
+                                    </a>
+                                    <p>Tất cả các chú chó bán ra đều được tiêm chủng vắc xin, tẩy giun đúng định kì</p>
+                                </div>
+                            </div>
+                            <div class="item_cs">
+                                <div class="images-cs">
+                                    <a href="#">
+                                        <img class="transition img-fluid" src="upload/baiviet/dv1-1384.png"
+                                            alt="Bảo hành 10 ngày" />
+                                    </a>
+                                </div>
+                                <div class="des-cs">
+                                    <a href="#">
+                                        <h3>Bảo hành 10 ngày</h3>
+                                    </a>
+                                    <p>Cam kết bảo hành toàn diện tất cả các loại bệnh đã được tiêm phòng cho cún trong
+                                        10 ngày.</p>
+                                </div>
+                            </div>
+                            <div class="item_cs">
+                                <div class="images-cs">
+                                    <a href="#">
+                                        <img class="transition img-fluid" src="upload/baiviet/dv3-5104.png"
+                                            alt="Hợp đồng mua bán" />
+                                    </a>
+                                </div>
+                                <div class="des-cs">
+                                    <a href="#">
+                                        <h3>Hợp đồng mua bán</h3>
+                                    </a>
+                                    <p>Quy định rõ trách nhiệm của THEDOGHOUSE Shop trong từng trường hợp cụ thể, đảm
+                                        bảo tối đa quyền lợi cho khách hàng.</p>
+                                </div>
+                            </div>
+                            <div class="item_cs">
+                                <div class="images-cs">
+                                    <a href="#">
+                                        <img class="transition img-fluid" src="upload/baiviet/ship-9312.jpg"
+                                            alt="SHIP TOÀN QUỐC" />
+                                    </a>
+                                </div>
+                                <div class="des-cs">
+                                    <a href="#">
+                                        <h3>SHIP TOÀN QUỐC</h3>
+                                    </a>
+                                    <p>Ship toàn quốc. Miễn phí ship khi khoảng cách khách hàng dưới 20km.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var owl = $("#owl-camket");
+            owl.owlCarousel({
+                nav: true,
+                items: 4,
+                navText: ["", ""],
+                autoplay: true,
+                autoplayTimeout: 3000,
+                loop: true,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                dots: false
+            });
+        });
+    </script>
+    <!-- END PET -->
+    <!-- CONTRACT -->
+    <section id="contact">
+        <div class="container-fluid contact">
+            <p class="text-ft" style="font-size: 17px;margin-bottom: 10px;"><strong
+                    style="font-size: 26px;font-family:'OpenSansBold';">THEDOGHOUSE</strong> nơi cung cấp những người
+                bạn</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">liên hệ với
+                        chúng tôi</strong>
+                    <form method="POST" action="" class="form" id="form-2">
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your name" name="fullname" type="text" class="form-control"
+                                id="fullname_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your email" name="email" type="text" class="form-control" id="email_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-12 form-group">
+                            <textarea cols="30" rows="10" placeholder="yourmessage" class="form-control" name="content"
+                                id="content_2"></textarea>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-3 col-xl-3">
+                                <button class="submit-button form-submit"><strong>SUBMIT</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 information">
+                    <strong
+                        style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">information</strong>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> Thú Cưng Company
+                        <br><span>1A Nam Kỳ Khởi Nghĩa Street</span>
+                        <br><span>Thành phố HCM</span>
+                    </p>
+                    <p class="phone"><i class="fas fa-phone-square"></i> +84 (Phone) 89.777.999</p>
+                    <p class="fax"><i class="fas fa-print"></i> +077 (FAX) 0011223</p>
+                    <p class="email"><i class="fas fa-envelope"></i> info@bak-thucungcompany.com</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="thongke">
+                        <h3>Thống kê truy cập</h3>
+                        <p><img src="./upload/baiviet/dangonline.png" alt="đang online" /> Đang online :<span
+                                class="black">59</span></p>
+                        <p><img src="./upload/baiviet/tuan.png" alt="Hôm qua" /> Truy cập tuần : <span
+                                class="black">2979</span></p>
+                        <p><img src="./upload/baiviet/thang.png" alt="tháng" /> Truy cập tháng : <span
+                                class="black">7613</span></p>
+                        <p><img src="./upload/baiviet/tong.png" alt="tổng" /> Tổng truy cập : <span
+                                class="black">442112</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTRACT -->
+    <!-- LOGIN MODAL -->
+
+    <div class="modal fade" id="login-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-color" style="background-color:#ec0000">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title text-center">Đăng Nhập</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="POST" class="form" id="form-3">
+                        <div class="form-group">
+                            <label for="username">Tên Đăng Nhập</label>
+                            <input type="text" class="form-control" name="username" id="username_3">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật Khẩu</label>
+                            <input type="password" class="form-control" name="password" id="password_3">
+                            <span class="eye" onclick="showHide3();">
+                                <i id="toggle3"></i>
+                                <i id="toggle4"></i>
+                            </span>
+                            <span class="form-message"></span>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox"> Lưu Mật Khẩu
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label id="error_login" style="color:red"></label>
+                        </div>
+                        <button class="btn btn-primary btn-block bg-color form-submit"
+                            style="background-color:#ec0000">Đăng Nhập</button>
+                        <button type="button" class="btn btn-link" id="chuaLaThanhVien">Bạn chưa là thành viên? Đăng kí
+                            ngay!</button><br>
+                        <button type="button" class="btn btn-link">Quên Mật Khẩu?</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOGIN MODAL -->
+    <!-- REGISTER MODAL -->
+
+    <div class="modal fade" id="register" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#ec0000">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h3 class="modal-title text-center">Đăng Ký</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="POST" class="form" id="form-1">
+                        <div class="form-group">
+                            <label for="fullname" class="form-label">Họ Và Tên</label>
+                            <input type="text" class="form-control" name="fullname" id="fullname"
+                                placeholder="VD:Thanh Tùng">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="username" class="form-label">Tên Đăng Nhập</label>
+                            <input type="text" class="form-control" name="username" id="username"
+                                placeholder="VD:Tung78">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="form-label">Mật Khẩu</label>
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="Nhập mật khẩu">
+                            <span class="eye" onclick="showHide()">
+                                <i id="toggle1"></i>
+                                <i id="toggle2"></i>
+                            </span>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password_confirmation" class="form-label">Nhập Lại Mật Khẩu</label>
+                            <input type="password" class="form-control" name="password_confirmation"
+                                id="password_confirmation" placeholder="Nhập lại mật khẩu">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone_number" class="form-label">số điện thoại</label>
+                            <input type="text" class="form-control" name="phone_number" id="phone_number"
+                                placeholder="Nhập số điện thoại">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Địa Chỉ Email</label>
+                            <input type="text" class="form-control" name="email" id="email"
+                                placeholder="VD:Example@gmail.com">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="province" class="form-label">Tỉnh/TP</label>
+                            <select class="form-control" name="provice" id="province">
+                                <option value="">-- Chọn Tỉnh/TP --</option>
+                                <option value="hn">Hà Nội</option>
+                                <option value="dn">Đà Nẵng</option>
+                                <option value="tp">TP.Hồ Chí Minh</option>
+                            </select>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="form-group horizontal">
+                            <label for="gender" class="form-label">Giới tính</label>
+                            <div class="gender_1">
+                                <input name="gender" type="radio" value="male">Nam
+                            </div>
+                            <div class="gender_2">
+                                <input name="gender" type="radio" value="female">Nữ
+                            </div>
+                            <span class="form-message"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6"><button
+                                    class="btn btn-success btn-block btn-md form-submit">Register</button>
+                            </div>
+                            <div class="col-xs-12 col-md-6"><button type="reset"
+                                    class="btn btn-danger btn-block btn-md">Reset</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END REGISTER MODAL -->
+    <!-- FOOTER -->
+
+    <div class="modal fade" role="dialog" id="cartModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: red; border-radius: 5px 5px 0px 0px;">
+                    <h5 class="modal-title" id="shoppingCartModal"
+                        style="color:black;text-align: center;font-weight: bold;font-size: 20px;">
+                        GIỎ HÀNG
+                    </h5>
+                    <button style="font-weight: 900;" type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-img">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img style="width: 65px;height: 65px;" src="img/logo1.jpg" alt=""></td>
+                                <td>alaska </td>
+                                <td>50000</td>
+                                <td>3</td>
+                                <td>15000</td>
+                            </tr>
+                            <tr>
+                                <td><img style="width: 65px;height: 65px;" src="img/logo1.jpg" alt=""></td>
+                                <td>puppy</td>
+                                <td>50000</td>
+                                <td>3</td>
+                                <td>15000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="#">
+                        <h5>Tổng sản phẩm: <span class="item-total text-success">6</span></h5>
+                    </div>
+                    <div class="#">
+                        <h5>Tổng số tiền: <span class="price-total text-success">30000000<sup>vnđ</sup></span></h5>
+                    </div>
+                </div>
+
+                <div class="modal-footer justify-content-between"
+                    style="background-color: red; border-radius: 0 0 5px 5px;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success check-out-btn" data-target=".check-out"
+                        data-toggle="modal"><a style="text-decoration: none;" href="kiem-tra-san-pham.html">check
+                            out</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                    <p>
+                        <script>
+                            let d = new Date();
+                            let html = `&COPY; ${d.getFullYear()} Copyright Shop <strong>THEDOGHOUSE</strong> `;
+                            document.write(html);
+                        </script>
+                    </p>
+                </div>
+                <!-- Back to top -->
+                <button class="bttop" id="bttop">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/validator.js"></script>
+    <script type="text/javascript" src="./js/scriptIndex.js"></script>
+    <script src='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js'></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="./js/bttop.js"></script>
+    <!-- END FOOTER -->
+    <!-- <script>
+        // cách 2 : thêm các rules vào input
+        var form = new Validator('#form-1');
+        form.onSubmit = function (formData){
+            console.log(formData);
+        }
+        var form = new Validator('#form-2');
+        form.onSubmit = function (formData){
+            console.log(formData);
+        }
+        var form = new Validator('#form-3');
+        form.onSubmit = function (formData){
+            console.log(formData);
+        }
+        
+    </script> -->
+    <Script>
+        // Mong muốn
+        Validator({
+            // làm việc với form 1
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ'),
+                Validator.maxLength('#fullname', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                Validator.isRequired('#username', 'Vui lòng nhập tài khoản'),
+                Validator.maxLength('#username', 15, 'Chỉ được nhập tối đa 15 ký tự'),
+                Validator.isRequired('#password', 'Vui lòng nhập mật khẩu'),
+                Validator.minLength('#password', 6, 'Vui lòng nhập tối thiểu 6 ký tự'),
+                Validator.isRequired('#password_confirmation', 'Vui lòng xác nhận mật khẩu'),
+                Validator.isConfirmed('#password_confirmation', function () {
+                    return document.querySelector(' #form-1 #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+                Validator.isRequired('#phone_number', 'Vui lòng nhập số điện thoại'),
+                Validator.isPhone('#phone_number', 'Số điện thoại không hợp lệ'),
+                Validator.isRequired('#email', 'Vui lòng nhập địa chỉ email'),
+                Validator.isEmail('#email', 'Email không hợp lệ'),
+                Validator.isRequired('#province', 'Vui lòng chọn tỉnh thành phố'),
+                Validator.isRequired2('input[name="gender"]', 'Vui lòng chọn giới tính'),
+            ],
+            onSubmit: function (data) {
+                console.log(data)
+            }
+        });
+        Validator({
+            // làm việc với form 2
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname_2', 'Vui lòng nhập tên đầy đủ'),
+                Validator.maxLength('#fullname_2', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                Validator.isRequired('#email_2', 'Vui lòng nhập địa chỉ email'),
+                Validator.isEmail('#email_2', 'Email không hợp lệ'),
+                Validator.isRequired('#content_2', 'Vui lòng nhập nội dung'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data)
+            }
+        });
+        Validator({
+            // làm việc với form 3
+            form: '#form-3',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#username_3', 'Vui lòng nhập tài khoản'),
+                Validator.isRequired('#password_3', 'Vui lòng nhập mật khẩu'),
+
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data)
+            }
+        });
+    </Script>
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+/* media index */
+@media only screen and (width:320px) {
+    #fanpage {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    #fanpage img{
+      width:100%;
+      height: auto;
+      margin:55px 0 0 0;
+    }
+    .img-cs img{
+        display: none !important;
+    }
+    .icon-ck img{
+      margin-left: 130px;
+      margin-bottom: -40px;
+    }
+    .margin-cs{
+      margin:-3px 10px;
+    }
+    .chinhsach_home .box_chinhsach{padding-left:0px;}
+    .box_chinhsach h2{    
+      font-size: calc(19px + .5vw);
+      }
+      .owl-theme3 .owl-next {
+        left: 260px;
+    }
+    .animal .card .overlap {
+      width: 135px !important;
+      height: 130px !important;
+     
+  }
+    .animal .card {
+    
+    margin-bottom: 0 !important;
+  }
+  }
+
+  @media only screen and (width:360px) {
+    #fanpage {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    #fanpage img{
+      width:100%;
+      height: auto;
+      margin:50px 0 0 0;
+    }
+    .img-cs img{
+      display: none !important;
+    }
+    .icon-ck img{
+      margin-left: 150px;
+      margin-bottom: -40px;
+    }
+    .item_cs {
+      width: 100%;
+      padding: 0 38px;
+      text-align: center;
+      margin-left: 23px;
+  }
+    .margin-cs{
+      margin:-3px 13px;
+    }
+    .chinhsach_home .box_chinhsach{padding-left:0px;}
+    .box_chinhsach h2{    
+      font-size: calc(19px + .5vw);
+      margin-left: 22px;
+      }
+    .owl-theme3 .owl-prev {
+        
+        left: 3px !important;
+    }  
+    .owl-theme3 .owl-next {
+        
+        left: 302px;
+    }
+    .animal .card .overlap {
+      width: 180px !important;
+      height: 130px !important;
+  }
+    .animal .card {
+    
+    margin-left: -15px !important;
+    margin-bottom: 0 !important;
+  }
+  }
+  @media only screen and (width:280px) {
+    #fanpage {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    #fanpage img{
+      width:100%;
+      height: auto;
+      margin:59px 0 0 0;
+    }
+    .img-cs img{
+      display: none !important;
+    }
+    .icon-ck img{
+      margin-left: 111px;
+      margin-bottom: -40px;
+    }
+    .margin-cs{
+      margin:-3px -7px;
+    }
+    .chinhsach_home .box_chinhsach{padding-left:0px;}
+    .box_chinhsach h2{    
+      font-size: calc(17px + .5vw);
+      }
+    .owl-theme3 .owl-prev {
+        
+        left: 3px !important;
+    }  
+    .owl-theme3 .owl-next {
+        left: 260px;
+    }
+    .animal .card .overlap {
+      width: 135px !important;
+      height: 130px !important;
+     
+  }
+  .animal .card {
+    
+    margin-left: -10px !important;
+    margin-bottom: 0 !important;
+  }
+  }
+  @media only screen and (width:411px) , (width:414px) {
+    #fanpage {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    #fanpage img{
+      width:100%;
+      height: auto;
+      margin:45px 0 0 0;
+    }
+    .img-cs img{
+      display: none !important;
+    }
+    .icon-ck img{
+      margin-left: 168px;
+      margin-bottom: -40px;
+    }
+    .item_cs {
+      width: 120%;
+      padding: 0px 85px;
+      text-align: center;
+      margin-left: 32px;
+  }
+    .margin-cs{
+      margin:-19px -9px;
+    }
+    .chinhsach_home .box_chinhsach{padding-left:0px;}
+    .box_chinhsach h2{    
+      font-size: calc(19px + .5vw);
+      margin-left: 45px;
+      }
+    .owl-theme3 .owl-prev {
+        
+        left: 42px !important;
+    }  
+    .owl-theme3 .owl-next {
+        
+        left: 355px;
+    }
+    .animal .card .overlap {
+      width: 180px !important;
+      height: 130px !important;
+  }
+    .animal .card {
+    
+    margin-left: -3px !important;
+    margin-bottom: 0 !important;
+  }
+  }
+  @media only screen and (width:375px) {
+    #fanpage {
+      width: 100%;
+      padding: 0;
+      position: relative;
+    }
+    #fanpage img{
+      width:100%;
+      height: auto;
+      margin:49px 0 0 0;
+    }
+    .img-cs img{
+      display: none !important;
+    }
+    .icon-ck img{
+      margin-left: 150px;
+      margin-bottom: -40px;
+    }
+    .item_cs {
+      width: 100%;
+      padding: 0 38px;
+      text-align: center;
+      margin-left: 23px;
+  }
+    .margin-cs{
+      margin:-20px 21px;
+    }
+    .chinhsach_home .box_chinhsach{padding-left:0px;}
+    .box_chinhsach h2{    
+      font-size: calc(19px + .5vw);
+      margin-left: 30px;
+      }
+    .owl-theme3 .owl-prev {
+        
+        left: 3px !important;
+    }  
+    .owl-theme3 .owl-next {
+        
+        left: 302px;
+    }
+    .animal .card .overlap {
+      width: 180px !important;
+      height: 130px !important;
+  }
+    .animal .card {
+    
+    margin-left: -13px !important;
+    margin-bottom: 0 !important;
+  }
+  }
+@media only screen and (width:768px) {
+    #fanpage img{
+        top:-88px;
+    }
+    .box_chinhsach h2{    
+        font-size: calc(19px + .5vw);
+        margin-left: 46px;
+        }
+    .icon-ck img{
+        margin-left: 188px;
+        margin-bottom: -120px;
+    }
+    .owl-theme3 .owl-next {
+        
+        left: 422px;
+    }   
+}
+@media only screen and (width:1024px){
+    #fanpage img{
+        top:-85px;
+    }
+    .owl-theme3 .owl-next {
+        
+        left: 654px;
+    } 
+}
+@media only screen and (width:540px) {
+    #fanpage img{
+        top:-86px;
+    }
+    .box_chinhsach h2{    
+        font-size: calc(19px + .5vw);
+        margin-left: -130px;
+        }
+    .icon-ck img{
+        margin-left: 2px;
+        margin-bottom: -85px;
+    }
+    .owl-theme3 .owl-next {
+        
+        left: 193px;
+    }   
+    .animal .card .overlap {
+        width: 180px !important;
+        height: 130px !important;
+    }
+      .animal .card {
+      margin-bottom: 0 !important;
+    }
+}
+@media only screen and (width:425px){
+  #fanpage {
+    width: 100%;
+    padding: 0;
+    position: relative;
+  }
+  #fanpage img{
+    width:100%;
+    height: auto;
+    margin:45px 0 0 0;
+  }
+  .img-cs img{
+    display: none !important;
+  }
+  .icon-ck img{
+    margin-left: 176px;
+    margin-bottom: -40px;
+  }
+  .item_cs {
+    width: 121%;
+    padding: 0px 90px;
+    text-align: center;
+    margin-left: 39px;
+}
+  .margin-cs{
+    margin:-19px -9px;
+  }
+  .chinhsach_home .box_chinhsach{padding-left:0px;}
+  .box_chinhsach h2{    
+    font-size: calc(19px + .5vw);
+    margin-left: 45px;
+    }
+  .owl-theme3 .owl-prev {
+      
+      left: 42px !important;
+  }  
+  .owl-theme3 .owl-next {
+      
+      left: 373px;
+  }
+  .animal .card .overlap {
+    width: 180px !important;
+    height: 130px !important;
+}
+  .animal .card {
+  
+  margin-left: -3px !important;
+  margin-bottom: 0 !important;
+}
+}

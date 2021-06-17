@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sản Phẩm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/original.jpg">
+    <link rel="stylesheet" href="lib/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="css/own/owl.carousel.css">
+    <link rel="stylesheet" href="css/own/owl.theme.default.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.css'>
+    <link rel="stylesheet" href="./jbox/jBox.css">
+    <link rel="stylesheet" href="./jbox/jBox.Confirm.css">
+    <script type="text/javascript" src="lib/WOW-master/dist/wow.min.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+	<!-- TOP NAVBAR -->
+	<div>
+		<div class="topBar col-md-12">
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >x</a>
+				<a class="active" href="index.html">Trang Chủ</a>
+				<hr>
+				<a href="san-pham.html">Sản Phẩm</a>
+				<hr>
+				<a href="gioi-thieu.html">Giới Thiệu</a>
+				<hr>
+				<a href="lien-he.html">Liên Hệ</a>
+				<hr>
+				<a href="huong-dan-mua-hang.html">Hướng Dẫn Sử Dụng</a>
+				<hr>
+				<a href="quan-ly-don-hang.html">Đơn Hàng</a>
+			</div>
+			<div class="row">		
+				<div class="col-lg-6 col-md-6 col-6 col-xl-6  pull-left">
+                    <ul class="list-inline pull-left">
+                        <li><a href="#"><i style="margin-top: 20px;" class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pull-right">
+                    <ul class="list-inline pull-right top-right">
+                        <!-- pull right là đẩy phải -->
+                        <li class="account-login ">
+                            <span class="block">
+                                <a style="background: grey;border-radius: 5px;margin-top: 10px;" class="login"
+                                    id="btn-login" href="#">
+                                    <strong>Đăng Nhập</strong> </a>
+                                <small>|</small>
+                                <a style="background: grey;border-radius: 5px;padding-right: 15px;" class="sign-up"
+                                    id="btn-register" href="#"> <strong>Đăng Ký</strong></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>			
+			</div>
+		</div>
+	</div>
+	<!-- END TOP NAVBAR -->
+	<!-- HEADER TOP -->
+	<div class="col-lg-12 col-md-12 col-sm-12 header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 logo" style="margin: 5px 0px 5px 0px">
+					<a href="#"><img src="img/ngon.jpg" alt="img-reponsive"></a>	
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 hidden-xs logo1" style="margin: 5px 0px 5px 0px">
+					<a href="#"><img src="img/897.jpg" alt="img-reponsive"></a>	
+				</div>
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs header__hotline">
+					<form action="" style="padding-top: 25px">
+                        <div class="header__hotline--bg">
+                            <p class="header__hotline--phone"><span><strong>Hotline: </strong><a
+                                        href="tel:0989.777.999">0989.777.999</a></span></p>
+                            <p class="header__hotline--email"><span><strong>Email: </strong><a
+                                        href="mailto:support@myphamgoda.com">support@Thedoghouse.com</a></span></p>
+                        </div>
+					</form>	
+				</div>		
+				    <div class="col-lg-3 col-md-3 hidden-sm hidden-xs search">
+                    <form action="" style="padding-top: 25px;position: relative;top:75px; left: 270px;">
+                            <div class="input-group">
+                                <input type="text"  class="form-control search" placeholder="Bạn muốn tìm gì?..." name="search">
+                                <div class="input-group-btn" >
+                                    <button class="btn bt-search" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                               
+                            </div>
+                    </form>
+                </div>
+
+			</div>
+			
+		</div>	
+	</div>		
+	<!-- END HEADER TOP -->
+
+	<!-- NAVBAR DESTOP -->
+	 <nav class="col-xs-12 navbar navbar-default bg-color" id="menu" style="position: sticky; margin: 0px; z-index: 99; top: 0px;">
+            <div class="container-fluid">
+                <span class="hidden-lg hidden-md header__btn">
+                    <div id="btn-cate main"><i class=" col-xs-1 " aria-hidden="true"></i></div>
+                    <span style="cursor:pointer" id="menu-hide" onclick="openNav()">
+                        <i style="color: #ec0000; font-size: 16px;" class="fa fa-bars"></i>
+                    </span>
+                </span>
+                <form action="" style="padding-top: 25px" class="hidden-lg hidden-md">
+                    <div class="input-group">
+                        <input type="text" id="result" class="form-control search" placeholder="Bạn muốn tìm gì?..." name="search" >
+                        <div class="input-group-btn">
+                            <button class="btn bt-search bg-color" type="submit"><i class="fa fa-search" style="color:grey"></i></button>
+                        </div>
+                        <input type="hidden" name="action" value="san-pham">
+                    </div>
+                </form> 
+                <ul class="nav navbar-nav navbar-left hidden-sm hidden-xs">
+                    <li class="acs-list"><a href="#" id="btn-category"><i class="fa fa-navicon"></i> Danh Mục Sản Phẩm</a></li>
+                    <li style="background-color:#555"><a href="index.html"><i class="fa fa-home" style="font-size: 16px"></i></a></li>
+                    <li><a href="san-pham.html">Sản Phẩm </a></li>                    
+                    <li><a href="gioi-thieu.html">Giới Thiệu </a></li>
+                    <li><a href="lien-he.html">Liên Hệ</a></li>
+                    <li><a href="huong-dan-mua-hang.html">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="quan-ly-don-hang.html">Quản Lý Đơn Hàng</a></li>
+                </ul>
+                <span class="hidden-lg hidden-md menu__cart">
+                    <a href="#" id="sub-btn-cart-detail"><i style="font-size: 16px;margin-left: 15px;" class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                </span>
+        </nav>
+		<nav class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navbar navbar-default acs-list" id="Categories"
+        style="position: sticky; z-index: 99;top: 50px;">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="chi-tiet-samoyed.html">Chó Samoyed</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-pug.html">Chó Pug </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-corgi.html"> Chó Corgi </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-husky.html">Chó Husky </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-shiba.html">Chó Shiba </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-becgie.html">Chó Becgie </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-akita.html">Chó Akita </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="chi-tiet-puppy.html">Chó Puppy </a>
+                    </li>
+                </ul> 
+            </div>
+        </nav> 
+        <div style="clear: both"></div> 
+       
+	<!-- END NAVBAR DESTOP -->
+ <main class="col-md-12 gioi-thieu">
+    <div class="container">
+        <ul class="breadcrumb" style="margin-top: 10px; margin-bottom: 0px; margin-left: -15px;">
+            <li class="breadcrumb-item">
+                <a href="index.html" itemprop="url" title="trang chủ"><span itemprop="title">Trang Chủ</span></a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="san-pham.html" itemprop="url" title="danh mục"><span itemprop="title">Kiểm Tra Sản Phẩm</span></a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+        <div class="row">
+<div class="row">
+   <div class="item col-md-5 col-sm-5 col-xs-5 thanhToan">
+      <h4 style="text-align: center; color: red; margin-top: 10px;"><b>ĐỊA CHỈ GIAO HÀNG CỦA QUÝ KHÁCH</b></h4>
+      <hr>
+      <div class="col-md-12 col-sm-12 col-xs-12">
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputName">Họ và tên</label>
+            <input type="text" class="form-control" value="Nguyễn Minh Hải" id="inputName">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+         </div>
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputEmail">Email</label>
+            <input type="text" class="form-control" value="haiozz311@gmail.com" id="inputEmail">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+         </div>
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputPhone">Số điện thoại</label>
+            <input type="text" class="form-control" value="0909363663" id="inputPhone">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+         </div>
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">Tỉnh / Thành phố</label>
+            <div>
+               <select class="form-control" name="TinhTP">
+                  <option>Hà Nội</option>
+                  <option selected>TPHCM</option>
+                  <option>Nghệ An</option>
+                  <option>Hải Dương</option>
+                  <option>Thanh Hóa</option>
+               </select>
+            </div>
+         </div>
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">Quận / Huyện</label>
+            <div>
+               <input name="QuanHuyen" type="text" class="form-control input-md" value="Quận 8">                               
+            </div>
+         </div>
+         <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputSuccess2">Địa chỉ nhận hàng (Phường/Xã - Đường - Số Nhà - Tầng)</label>
+            <div>
+               <textarea class="form-control" rows="3" name="XaPhuong">Dương Bá Trạc</textarea>                              
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--PHẦN THÔNG TIN ĐƠN HÀNG-->
+   <div class="item col-md-6 col-sm-6 col-xs-6 thanhToan tt1">
+      <h4 style="text-align: center; color: red;"><b>THÔNG TIN ĐƠN HÀNG</b></h4>
+      <hr>
+      <!--TIÊU ĐỀ-->
+      <div class="form-group has-success has-feedback">
+         <div class="col-xs-6">
+            <label class="control-label" for="inputSuccess2">Tên Sản Phẩm</label>
+         </div>
+         <div class="col-xs-3">
+            <label class="control-label" for="inputSuccess2">Số Lượng</label>
+         </div>
+         <div class="col-xs-3">
+            <label class="control-label" for="inputSuccess2">Giá</label>
+         </div>
+      </div>
+      <!--THÔNG TIN SẢN PHẨM ĐÃ CHỌN 1-->
+      <div class="row form-group has-success has-feedback" style="margin:3px 0px 3px 0px;">
+         <div class="col-xs-6">
+            <label>Chó Alaska</label>
+         </div>
+         <div class="col-xs-2">
+            <label>1</label>
+            <!--                                            <input type="text" class="form-control" placeholder="1">-->
+         </div>
+         <div class="col-xs-3">
+            <label>5,000,000</label> VND
+            <!--                                            <input type="text" class="form-control" placeholder="849000">-->
+         </div>
+      </div>
+      <div class="row form-group has-success has-feedback" style="margin:3px 0px 3px 0px;">
+         <div class="col-xs-6">
+            <label>Chó Shiba</label>
+         </div>
+         <div class="col-xs-2">
+            <label>1</label>
+         </div>
+         <div class="col-xs-3">
+            <label>4,000,000</label> VND
+         </div>
+      </div>
+      <div class="row form-group has-success has-feedback" style="margin:3px 0px 3px 0px;">
+         <div class="col-xs-6">
+            <label>Chó Pug</label>
+         </div>
+         <div class="col-xs-2">
+            <label>2</label>
+            <!--                                            <input type="text" class="form-control" placeholder="2">-->
+         </div>
+         <div class="col-xs-3">
+            <label>7,000,000</label> VND
+            <!--                                            <input type="text" class="form-control" placeholder="180000">-->
+         </div>
+      </div>
+      <!--THÔNG TIN GIÁ VẬN CHUYỂN-->
+      <div class="row">
+         <div class="col-xs-11">
+            <input type="radio" name="radioDatHang" id="mienPhi"  checked>
+            <input type="text" id="giaMienPhi" size="3" value="0" readonly=""> VND : Giao Hàng Tiết Kiệm: Miễn Phí 
+            <!--                                        Giao hàng miễn phí: 0 VND (4 đến 7 ngày)-->
+         </div>
+         <div class="col-xs-11">
+            <input type="radio" name="radioDatHang" id="tinhPhi">
+            <input type="text" id="giaTinhPhi" size="3" value="30000" readonly=""> VND : Giao Hàng Tiêu Chuẩn: Từ 2 đến 3 ngày                                        <!--                                        Giao hàng tiêu chuẩn: 30.000 VND (2 đến 3 ngày)-->
+         </div>
+      </div>
+      <!--TỔNG GIÁ TẤT CẢ SẢN PHẨM-->
+      <hr>
+      <div class="row form-group has-success has-feedback" style="margin:3px 0px 3px 0px;">
+         <div class="col-xs-1">
+         </div>
+         <script language="javascript">
+            $(document).ready(function () {
+                var giaTinhPhi = parseInt($("#giaTinhPhi").val());
+                $('#tinhPhi').change(function () {
+                    if (!$("#mienPhi").prop("checked")) {
+                        var sum = parseInt($("#sum").val());
+            
+                        $("#sum").val(sum + giaTinhPhi);
+                    }
+                });
+                $('#mienPhi').change(function () {
+                    if (!$("#tinhPhi").prop("checked")) {
+                        var sum = parseInt($("#sum").val());
+                        $("#sum").val(sum - giaTinhPhi);
+                    }
+                });
+            });
+         </script>
+         <div class="col-xs-3">
+            <label class="control-label" >Tổng Tiền: </label>
+         </div>
+         <div class="col-xs-7">
+            <input type="text" id="sum" size="7" value="16000000" readonly=""> VND
+         </div>
+      </div>
+   </div>
+   <!-- BUTTON -->
+   <div class="item col-md-6 col-sm-6 col-xs-6 thanhToan tt2">
+      <button style="width:310px;height: 50px" type="submit" name="btn-dat-hang" class="btn btn-primary">ĐẶT HÀNG</button>
+   </div>
+   <!-- GHI CHÚ -->
+   <div class="item col-md-6 col-sm-6 col-xs-6 thanhToan tt1">
+      <b>Lưu ý:</b><br>
+      - Bạn nhớ kiểm tra kỹ thông tin của đơn hàng và địa chỉ giao hàng bên trên vì thông tin này sẽ không thể thay đổi sau khi đơn hàng được xác nhận thành công.<br>
+      - Bạn vui lòng xem lại thông tin trong xác nhận đơn hàng được gửi qua email.<br>
+      - Hiện tại Thedohhouse chưa thể hỗ trợ giao hàng lên lầu / tầng đối với các địa chỉ thuộc chung cư hoặc tòa nhà cao tầng.
+   </div>
+</div>
+
+
+        </div>
+    </div>
+</main>
+        <!-- CONTRACT -->
+    <section id="contact">
+        <div class="container-fluid contact">
+            <p class="text-ft" style="font-size: 17px;margin-bottom: 10px;"><strong
+                    style="font-size: 26px;font-family:'OpenSansBold';">THEDOGHOUSE</strong> nơi cung cấp những người
+                bạn</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <strong style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">liên hệ với
+                        chúng tôi</strong>
+                    <form method="POST" action="" class="form" id="form-2">
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your name" name="fullname" type="text" class="form-control"
+                                id="fullname_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input placeholder="your email" name="email" type="text" class="form-control" id="email_2">
+                            <span class="form-message"></span>
+                        </div>
+                        <br>
+                        <div class="col-md-12 form-group">
+                            <textarea cols="30" rows="10" placeholder="yourmessage" class="form-control" name="content"
+                                id="content_2"></textarea>
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-3 col-xl-3">
+                                <button class="submit-button form-submit"><strong>SUBMIT</strong></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-3 information">
+                    <strong
+                        style="font-family:'OpenSansBold';text-transform: uppercase;font-size: 16px;">information</strong>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> Thú Cưng Company
+                        <br><span>1A Nam Kỳ Khởi Nghĩa Street</span>
+                        <br><span>Thành phố HCM</span>
+                    </p>
+                    <p class="phone"><i class="fas fa-phone-square"></i> +84 (Phone) 89.777.999</p>
+                    <p class="fax"><i class="fas fa-print"></i> +077 (FAX) 0011223</p>
+                    <p class="email"><i class="fas fa-envelope"></i> info@bak-thucungcompany.com</p>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="thongke">
+                        <h3>Thống kê truy cập</h3>
+                        <p><img src="./upload/baiviet/dangonline.png" alt="đang online" /> Đang online :<span
+                                class="black">59</span></p>
+                        <p><img src="./upload/baiviet/tuan.png" alt="Hôm qua" /> Truy cập tuần : <span
+                                class="black">2979</span></p>
+                        <p><img src="./upload/baiviet/thang.png" alt="tháng" /> Truy cập tháng : <span
+                                class="black">7613</span></p>
+                        <p><img src="./upload/baiviet/tong.png" alt="tổng" /> Tổng truy cập : <span
+                                class="black">442112</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- END CONTRACT -->
+       <!-- FOOTER -->
+       <footer>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-md-12  text-center">
+                    <p>
+                        <script>
+                            let d = new Date();
+                            let html = `&COPY; ${d.getFullYear()} Copyright Shop <strong>THEDOGHOUSE</strong> `;
+                            document.write(html);
+                        </script>
+                    </p>
+                </div>
+                <!-- Back to top -->
+                <button class="bttop" id="bttop">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+        <!-- END FOOTER -->
+        <script src="./jbox/jBox.Confirm.js"></script>
+        <script src="./jbox/jBox.js"></script>
+        <script src="./jbox/Demo.js"></script>
+        <script src="./js/validator.js"></script>
+        <script type="text/javascript" src="./js/scriptIndex.js"></script>
+        <script src='https://cdn.rawgit.com/t4t5/sweetalert/v0.2.0/lib/sweet-alert.min.js'></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script>
+            Validator({
+            // làm việc với form 2
+            form: '#form-2',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname_2', 'Vui lòng nhập tên đầy đủ'),
+                Validator.maxLength('#fullname_2', 20, 'Chỉ được nhập tối đa 20 ký tự'),
+                Validator.isRequired('#email_2', 'Vui lòng nhập địa chỉ email'),
+                Validator.isEmail('#email_2', 'Email không hợp lệ'),
+                Validator.isRequired('#content_2', 'Vui lòng nhập nội dung'),
+            ],
+            onSubmit: function (data) {
+                // Call API
+                console.log(data)
+            }
+        });
+        </script>
+            
+        
+</body>
+</html>

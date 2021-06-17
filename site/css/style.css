@@ -1,0 +1,393 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}	
+h1,p, h3, h4, footer{
+	margin: 0; 
+}	
+
+@font-face{
+	font-family: "OpenSans-Regular";
+	src:url("../fonts/open sans/OpenSans-Regular.ttf");
+}
+@font-face{
+	font-family: "OpenSans-Bold";
+	src:url("../fonts/open sans/OpenSans-Bold.ttf");
+}
+@font-face{
+	font-family: "OpenSans-Bold";
+	src:url("../fonts/open sans/OpenSans-Light.ttf");
+}
+
+
+.animal {
+	font-family: "OpenSans-Regular";
+	font-size:14px;
+	text-align: center;
+	margin-bottom:  30px;
+}
+.animal h1 {
+	margin-top: 15px;
+	font-size: 55px;
+	line-height: 58px;
+	margin-bottom: 15px;
+
+}
+.animal p {
+	font-size: 15px;
+	font-family: "OpenSans-Regular";
+	margin-bottom: 15px;
+    padding-bottom: 15px;
+	
+}
+.animal button{
+	background-color:  #fea15c;
+	color:white;
+	height :37px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-right: 10px;
+	letter-spacing: 2px;
+	margin-left: 9px;
+	margin-right: 9px;
+	border :none;
+	font-family: "OpenSans-Regular";
+	margin-bottom: 30px;
+	animation-name: okok;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes okok{
+	0% {background-color: orange}
+	20%{background-color: black}
+	40%{background-color: orange}
+	60%{background-color: black}
+	80%{background-color:orange}
+	100%{background-color: black}
+}
+.animal .card{
+	width: 180px;
+	height: 180px;
+	margin: auto;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+.animal .card:hover .overlap{
+	display: block;
+}
+
+.animal .card .overlap{
+	width: 180px;
+	height:180px;
+	margin: auto;
+	position: absolute;
+	top:0;
+	opacity: 0.5;
+	background-color: white;
+	border-radius: 50%;
+	display: none;
+}
+
+.animal .card .overlap > div {
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: black;
+	font-size: 18px;
+	width: 180px;
+	cursor: pointer;
+}
+
+.animal .card .overlap > div > div.search {
+	width: 45px;
+	line-height: 45px;
+	border-radius: 50%;
+	background-color: black;
+	text-align: center;
+	margin: auto;
+	color: black;
+}
+.animal .card .overlap > div >div.search >i{
+	font-size: 25px;
+	text-align: center;
+}
+.animal .card .overlap > div > div.search >a{
+	color:white;	
+}
+
+div.class1 p{
+	font-family: "OpenSans-Regular";
+	text-align: center;
+}
+div.class2 p{
+	font-family: "OpenSans-Regular";
+	text-align: center;
+}
+div.class1 h3{
+	font-family: "OpenSans-Regular";
+	font-weight: bold;
+}
+div.class2 h3{
+	font-family: "OpenSans-Regular";
+	font-weight: bold;
+}
+
+.contact{
+	font-family: "OpenSans-Regular";
+	padding-top: 20px;
+	text-align: center;
+	background-color: #ecf0f1;
+	padding-bottom: 60px;
+	
+}
+
+
+.contact .information {
+	text-align: left;
+}
+.contact .information h4{
+	font-size:14px;
+	font-family: "OpenSans-Regular";
+	margin-bottom: 22px;
+	color:#444;
+	text-transform: uppercase;
+}
+.contact .information .address{
+	font-size:14px;
+	font-family: "OpenSans-Regular";
+	margin-bottom: 22px;
+	color:#444;
+}	
+
+.contact .information .address > span {
+	position: relative;
+	left:10px;
+}
+.contact .information .fax,
+.contact .information .email,
+.contact .information .phone{
+	font-size:14px;
+	font-family: "OpenSans-Regular";
+	height: 15px;
+	margin-bottom: 22px;
+	color:#444;
+}
+.contact input[type=text],
+.contact input[type=email]{
+	margin-top:23px;
+	text-align: left;
+}
+.contact textarea{
+	height:155px;
+}
+.contact .submit-button{
+	margin-top:23px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "OpenSans-Regular";
+	
+}
+@media only screen and (max-width: 410px){
+	.submit-button{
+     white-space: nowrap;
+	background-color:orange;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	left: 260px;	
+
+	}
+}
+@media only screen and (min-width: 410px){
+	.submit-button{
+     white-space: nowrap;
+	background-color:orange;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	left: 260px;
+	display: block;
+	position: relative;	
+
+	}
+}
+/* .contact .submit-button input[type=submit] {
+	background-color:orange;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	left: 260px;
+} */
+footer {
+	background: #2d3e50;
+	
+}
+footer p{
+	font-family: "OpenSans-Regular";
+	line-height: 86px;
+	font-size: 14px;
+	color:white;
+	padding-left: 25px;
+    white-space: nowrap;
+	text-align: center;
+}
+
+footer a{
+	width: 45px;
+	line-height: 45px;
+	color: white;
+	background: grey;
+	text-align: center;
+	position: fixed;
+	bottom: 20px;
+	right:40px;
+	display: inline-block;
+	}
+@media only screen and (max-width: 1020px){
+	.bttop{
+	margin:0 8%;
+	}
+  
+	}
+.introduce{
+	min-width: 100%;
+	font-family: "OpenSans-Regular" ;
+    word-break: keep-all;
+}
+
+@media only screen and (max-width: 600px){
+	.text-gt h2{
+		font-size: 22px !important;
+	} 
+}	
+/* Liên Hệ */
+#content{
+	padding:10px 0 30px 0;
+	background:#fff;
+}
+.container_main{
+	position:relative;
+	width:1200px;
+	margin:auto;
+}
+.breadcrumb{
+	margin-bottom:20px;
+	list-style:none;
+	background:none!important;
+	padding:0!important;
+}
+.breadcrumb-item a{
+	color:#666!important;
+	font-size:15px;
+	text-decoration: none;
+
+}
+.breadcrumb-item:hover a{
+	color:red!important;
+}
+.breadcrumb > li{
+	display:inline-block;
+	font-size:0.813rem;
+}
+.breadcrumb>li+li::before{
+	padding-right:.2rem;
+	padding-left:.2rem;
+	color:#818a91;
+	content:"/";
+}
+.breadcrumb>li+li:before{
+	content:'/';
+	color:#666;
+	font-size:15px;
+}
+.breadcrumb-item  a:hover{color:red;}
+.breadcrumb li:first-child a span{display:none;}
+.breadcrumb li:first-child a:before{
+	content:'\f015';
+	font-size:17px;
+	font-family:"FontAwesome";
+	color:#666;
+	font-weight:500;
+	text-indent:0px;
+	vertical-align:middle;
+	line-height:1;
+	position:relative;
+	top:-1px;
+	margin-right:2px;
+}
+.left_contact{
+	width:40%;
+	float:left;
+	padding-right:40px;
+}
+
+.form_lh p{padding:5px 0px 5px 0px;}
+.form_lh .form-group{
+	width:80%;
+	padding:0px 10px;
+	float:left;
+	margin-top: -15px;
+}
+.form_lh p input{
+	padding:5px;
+	width:calc(100%);
+	height:40px;
+	outline:none;
+}
+
+.form_lh p textarea{
+	padding:5px;
+	border:1px solid #ccc;
+	height:150px;
+	outline:none;
+}
+.form_lh p button{
+	border:0px;
+	background:#303030;
+	padding:8px 25px 8px 25px;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	margin:8px;
+}
+.form_lh .form-group img {
+    margin-left: 0px;
+}
+.fa-refresh:before {
+    content: "\f021";
+}
+.cl-text{
+	float: right;
+	margin: 0px 230px;
+}
+.margin_form .i_fresh{font-size:20px;cursor:pointer;}
+
+.form_lh p button:hover{background:#036593}
+
+
+
+
+ 
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
